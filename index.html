@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>myBudget</title>
+    </head>
+    <body>
+        
+        <div class="top">
+            <div class="budget">
+                <div class="budget-title">
+                    Available Budget in <span class="budget-title-month">Month</span>:
+                </div>
+                
+                 <div class="budget-value">+0.00</div>
+                
+                <div class="budget-income budget-container">
+                    <div class="budget-income-text">Income</div>
+                    <div class="right-container">
+                        <div class="budget-income-value">+0.00</div>
+                        <div class="budget-income-percentage">&nbsp;</div>
+                    </div>
+                </div>
+                
+                <div class="budget-expenses budget-container">
+                    <div class="budget-expenses-text">Expenses</div>
+                    <div class="right-container">
+                        <div class="budget-expenses-value">-0.00</div>
+                        <div class="budget-expenses-percentage">0%</div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bottom">
+            <div class="add">
+                <div class="add-container">
+                    <select class="add-type">
+                        <option value="inc" selected>+</option>
+                        <option value="exp">-</option>
+                    </select>
+                    <input type="text" class="add-description" placeholder="Add description">
+                    <input type="number" class="add-value" placeholder="Amount">  
+                    <input type="date" class="add-date" value="2022-06-23">
+                    <button class="add-btn"><i class="ion-ios-checkmark-outline"></i></button>
+                </div>
+            </div>
+            
+            <div class="container">
+                <div class="income">
+                    <h2 class="income-title">Income</h2>
+                    <div class="list income-list">                        
+                       
+                    </div>
+                </div>
+            
+                <div class="expenses">
+                    <h2 class="expenses-title">Expenses</h2>
+                    <div class="list expenses-list">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="app.js"></script>
+    </body>
+</html>
+
